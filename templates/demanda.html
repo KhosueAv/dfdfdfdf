@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="{% static 'css/demanda.css'%}" type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/272/272369.png">
+    <title>Proyect</title>
+</head>
+<body>
+
+    <section>
+        <div class="head">
+            <div class="logo">
+                <div class="btn-menu">
+                    <label for="btn-menu" class="icon-menu">
+                        <img src="{% static 'imagenes/tresrayas.png' %}" class="imagencita" alt="menu">
+                    </label>
+                </div>
+                <a class="alogo" href="http://127.0.0.1:8000/newjob">
+                    <img class='img_logo' src="{% static 'imagenes/logo_transparent.png' %}" alt="logo">
+                </a>
+                <nav class="navbar">
+                    <a href="http://127.0.0.1:8000/demand">СПРОС</a>
+                    <a href="http://127.0.0.1:8000/geography">ГЕОГРАФИЯ</a>
+                    <a href="http://127.0.0.1:8000/skill">НАВЫКИ</a>
+                    <a href="http://127.0.0.1:8000/vacancy">ВАКАНСИИ</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section id="container">
+        <div class="image-container">
+            <h1 class="demandatitle">ВОСТРЕБОВАННОСТЬ</h1>
+        </div>
+        <div class="tablas">
+            <h2 class="salary-year">Заработная плата в год</h2>
+            <section class="table-salary">
+                <div class="Cuadro1">
+                    <h3>Динамика уровня зарплат по года</h3>
+                    <p>Мы видим, что средняя зарплата по России составляет около 1000 долларов в год, В России много регионов с разными зарплатами.</p>
+                </div>
+                <div class="container-salary">
+                    <div class="img-salary1">
+                        <img class="foto" src="{% static 'imagenes/por-anio.JPG' %}" alt="Salary per year">
+                    </div>
+                </div>
+            </section>
+        </div>
+            <section class="container-vacant">
+                <div class="container-vacant-img">
+                    <img class="foto" src="{% static 'imagenes/salariopy.JPG' %}" alt="Vacancy per year">
+                </div>
+                <div class="vacantperyear">
+                    <div class="vacantessinp">
+                        <h2>Динамика количества вакансий по годам</h2>
+                        <p>Количество вакансий в год в России для работы постоянно увеличивается и сейчас приближается к 3 миллионам вакансий в год. Это происходит потому, что средняя зарплата в России выросла почти на 30% за последние 10 лет.</p>
+                    </div>
+                </div>
+            </section>
+
+        <div class="container-salary-analitic">
+            <div class="table-container">
+                <h2>Динамика заработной платы аналитика по годам</h2>
+                <p class="text-prof">На этом графике показан рост средней заработной платы за год в профессии аналитика</p>
+            </div>
+            <div class="container-profanalityc">
+                <img class="img-salario-prof" src="{% static 'imagenes/salarios-analista.JPG' %}" alt="Salary analist">
+            </div>
+        </div>
+        <section class="sectionvpyear">
+            <div class="container-vacancyperyear">
+                <div class="img-vacancyperyear">
+                    <img src="{% static 'imagenes/vacancia-profesion.JPG' %}" alt="huevada" class="foto">
+                </div>
+                <div class="content-vacancy">
+                    <h2>Вакансии по годам по профессии аналитик</h2>
+                    <p class="text-vacant">На графике видно увеличение количества вакансий до 2020 года и значительное уменьшение количества вакансий по сравнению с предыдущим годом</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+               <p>&copy; Хосуэ Авалос Паз и Миньо Антонино РИ-210950 </p>
+            </div>
+        </footer>
+
+        <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+            <a href="http://127.0.0.1:8000" class="about">Home</a>
+			<a href="http://127.0.0.1:8000/demand">СПРОС</a>
+			<a href="http://127.0.0.1:8000/geography">Таблица заработной платы</a>
+			<a href="http://127.0.0.1:8000/skill">TOP-10 НАВЫКИ</a>
+			<a href="http://127.0.0.1:8000/vacancy">ВАКАНСИИ</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+    </div>
+    </section>
+</body>
+</html>

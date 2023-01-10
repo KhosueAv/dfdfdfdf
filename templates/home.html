@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Proyect</title>
+	<link rel='stylesheet' href="{% static 'css/home.css'%}" type='text/css'>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/272/272369.png">
+</head>
+<body>
+    <section>
+        <div class="head">
+            <div class="logo">
+                <div class="btn-menu">
+                    <label for="btn-menu" class="icon-menu">
+                        <img src="{% static 'imagenes/tresrayas.png' %}" class="imagencita" alt="menu">
+                    </label>
+                </div>
+                <a class="alogo" href="http://127.0.0.1:8000/newjob">
+                    <img class='img_logo' src="{% static 'imagenes/logo_transparent.png' %}" alt="logo">
+                </a>
+                <nav class="navbar">
+                    <a href="http://127.0.0.1:8000/demand">СПРОС</a>
+                    <a href="http://127.0.0.1:8000/geography">ГЕОГРАФИЯ</a>
+                    <a href="http://127.0.0.1:8000/skill">НАВЫКИ</a>
+                    <a href="http://127.0.0.1:8000/vacancy">ВАКАНСИИ</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <div class="capa">
+        <h1 class="mib">NewJob!</h1>
+    </div>
+
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+		<nav>
+            <a href="http://127.0.0.1:8000" class="about">Home</a>
+			<a href="http://127.0.0.1:8000/demand">СПРОС</a>
+			<a href="http://127.0.0.1:8000/geography">Таблица заработной платы</a>
+			<a href="http://127.0.0.1:8000/skill">TOP-10 НАВЫКИ</a>
+			<a href="http://127.0.0.1:8000/vacancy">ВАКАНСИИ</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+</body>
+</html>

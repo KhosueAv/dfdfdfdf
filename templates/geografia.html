@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyect</title>
+    <link rel='stylesheet' href="{% static 'css/geografias.css'%}" type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/272/272369.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="head">
+            <div class="logo">
+                <div class="btn-menu">
+                    <label for="btn-menu" class="icon-menu">
+                        <img src="{% static 'imagenes/tresrayas.png' %}" class="imagencita" alt="menu">
+                    </label>
+                </div>
+                <a class="alogo" href="http://127.0.0.1:8000/newjob">
+                    <img class='img_logo' src="{% static 'imagenes/logo_transparent.png' %}" alt="logo">
+                </a>
+                <nav class="navbar">
+                    <a href="http://127.0.0.1:8000/demand">СПРОС</a>
+                    <a href="http://127.0.0.1:8000/geography">ГЕОГРАФИЯ</a>
+                    <a href="http://127.0.0.1:8000/skill">НАВЫКИ</a>
+                    <a href="http://127.0.0.1:8000/vacancy">ВАКАНСИИ</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="geography">
+        <div class="tile-geography">
+            <h1 class="geography">ГЕОГРАФИЯ</h1>
+        </div>
+    </section>
+
+    <h2>Вакансии по городам</h2>
+
+    <section class="tabla de geografia">
+        <div class="tabla">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>CITY</th>
+                    <th>SALARY</th>
+                    <th>VACANCY</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Москва</td>
+                    <td>75711 RUB</td>
+                    <td>1483</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Санкт-Петербург</td>
+                    <td>57913 RUB</td>
+                    <td>262</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Новосибирск</td>
+                    <td>46114 RUB</td>
+                    <td>107</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ростов-на-Дону</td>
+                    <td>49404 RUB</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Нижний Новгород</td>
+                    <td>44254 RUB</td>
+                    <td>68</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Воронеж</td>
+                    <td>42318 RUB</td>
+                    <td>58</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>Подольск (Московская область)</td>
+                    <td>59250 RUB</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Гудермес</td>
+                    <td>138714 RUB</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Химки</td>
+                    <td>83000 RUB</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Дубна</td>
+                    <td>100000 RUB</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+           <p>&copy; Хосуэ Авалос Паз и Миньо Антонино РИ-210950 </p>
+        </div>
+    </footer>
+        <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+            <a href="http://127.0.0.1:8000" class="about">Home</a>
+			<a href="http://127.0.0.1:8000/demand">СПРОС</a>
+			<a href="http://127.0.0.1:8000/geography">Таблица заработной платы</a>
+			<a href="http://127.0.0.1:8000/skill">TOP-10 НАВЫКИ</a>
+			<a href="http://127.0.0.1:8000/vacancy">ВАКАНСИИ</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+    </div>
+
+</body>
+</html>

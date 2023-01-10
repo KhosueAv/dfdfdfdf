@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="{% static 'css/header.css'%}" type='text/css'>
+    <link rel='stylesheet' href="{% static 'css/index.css'%}" type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/272/272369.png">
+    <title>Proyect</title>
+
+</head>
+<body>
+<section>
+    <div class="head">
+        <div class="logo">
+            <div class="btn-menu">
+                <label for="btn-menu" class="icon-menu">
+                    <img src="{% static 'imagenes/tresrayas.png' %}" class="imagencita" alt="menu">
+                </label>
+            </div>
+            <a class="alogo" href="http://127.0.0.1:8000/newjob">
+                <img class='img_logo' src="{% static 'imagenes/logo_transparent.png' %}" alt="logo">
+            </a>
+            <nav class="navbar">
+                    <a href="http://127.0.0.1:8000/demand">СПРОС</a>
+                    <a href="http://127.0.0.1:8000/geography">ГЕОГРАФИЯ</a>
+                    <a href="http://127.0.0.1:8000/skill">НАВЫКИ</a>
+                    <a href="http://127.0.0.1:8000/vacancy">ВАКАНСИИ</a>
+            </nav>
+        </div>
+    </div>
+</section>
+
+    <section class="home">
+        <div class="img-container">
+            <h1 class="title">АНАЛИТИК</h1>
+        </div>
+    </section>
+
+    <section id="what-is">
+        <h2 class="sanalitic">Об аналитике</h2>
+        <div class="container">
+            <div class="img-container1">
+                <img class="foto" src="{% static 'imagenes/analista-de-datos.jpg' %}" alt="Mean analist">
+            </div>
+            <div class="bloque1">
+                <h3>Что такое аналитика?</h3>
+                <p>Аналитик данных - это профессионал, который преобразует данные в информацию, чтобы иметь возможность более полно принимать решения в организации. Кроме того, собранная информация полезна для разработки новых стратегий внутри компании.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="for-what">
+        <div class="containerpaque">
+            <div class="bloque2">
+                <h3>Функции аналитика данных</h3>
+                <p>Основными функциями аналитика данных являются следующие:</p>
+                <ul class="funciones-analista">
+                    <li>Преобразование данных в крупномасштабную информацию</li>
+                    <li>Разрабатывать статистические программы</li>
+                    <li>Иметь критическое мышление</li>
+                    <li>Решатель технических проблем (HTML, CSS, PHP)</li>
+                    <li>Разработка алгоритмов, помогающих автоматизировать принятие решений</li>
+                </ul>
+            </div>
+            <div class="img-container2">
+                <img class="foto" src="{% static 'imagenes/actividades-de-un-analista-de-datos.jpg' %}" alt="Functions analist">
+            </div>
+        </div>
+    </section>
+
+    <section id="traduction">
+        <div class="container-ingles">
+            <div class="img-container3">
+                <img class="foto" src="{% static 'imagenes/Business_Analyst.jpg' %}" alt="traduction">
+            </div>
+            <div class="bloque3">
+                <h3 class="ingles">Перевод с английского</h3>
+                <p>На английском языке наиболее подходящим переводом аналитика данных для обозначения этого профессионала является Big Data Analyst.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="go">
+        <h2 class="motivacion">Давайте проанализируем!</h2>
+    </section>
+    <footer>
+        <div class="container">
+           <p>&copy; Хосуэ Авалос Паз и Миньо Антонино РИ-210950 </p>
+        </div>
+    </footer>
+
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+            <a href="http://127.0.0.1:8000" class="about">Home</a>
+			<a href="http://127.0.0.1:8000/demand">СПРОС</a>
+			<a href="http://127.0.0.1:8000/geography">Таблица заработной платы</a>
+			<a href="http://127.0.0.1:8000/skill">TOP-10 НАВЫКИ</a>
+			<a href="http://127.0.0.1:8000/vacancy">ВАКАНСИИ</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+    </div>
+</body>
